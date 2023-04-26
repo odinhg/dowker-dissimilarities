@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[
+backend=bibtex,
+sorting=ynt
+]{biblatex}
+\addbibresource{refs.bib}
+
+\defbibheading{secbib}[\bibname]{%
+	\section*{#1}%
+	\markboth{#1}{#1}}
+
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{todonotes}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tabularx}
+\usepackage{array}
+\setlength\extrarowheight{2pt} % or whatever amount is appropriate
+\usepackage{hyperref}
+\usepackage[capitalise, noabbrev]{cleveref}
+\usepackage{float}
+\usepackage{mathbbol}
+%\usepackage{tikz-cd}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+
+\usepackage{newpxtext,newpxmath} % Should be the last package import
+
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{lem}{Lemma}[thm]
+\newtheorem{cor}{Corollary}[thm]
+\newtheorem{prop}{Proposition}[thm]
+\newtheorem{rem}{Remark}[thm]
+\newtheorem{ill}{Illustration}[thm]
+\newtheorem{ex}{Example}[thm]
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+
+\setlength\parindent{0pt}
+\linespread{1.5}
+\title{Dowker dissimilarities}
+
+\begin{document}
+	\maketitle
+
+\section{Introduction}
+
+In this note, we summarize our progress attempting to generalize the results in \autocite{blaser2019sparse} replacing $[0,\infty)$ by a poset $P$.
+
+\begin{defn}[Poset stuff]
+	For the following definitions, let $P$ and $Q$ be posets, and let $[1]$ denote the poset $0\leq 1$.
+	\begin{itemize}
+		\item The \textit{hom-poset} $\hom(P,Q)$ consisting of all order preserving maps $P\to Q$ endowed with the partial order $f\leq g \iff \forall p\in P : f(p)\leq g(p)$.
+		
+		\item The \textit{product poset} $P\times Q$ with $(p,q)\leq(p',q')\iff p\leq p'\text{ and }q\leq q'$.
+		
+		\item The \textit{extended poset} $P^*:=\hom(P,[1])$ with $\infty \equiv 1$.
+		
+		\item The \textit{opposite poset} $P^{op}$ with the same underlying set as $P$ but with the reverse order. That is, $p\leq p'$ in $P^{op}$ if and only if $p'\leq p$ in $P$.
+	\end{itemize}
+\end{defn} 
+
+\begin{defn}[Dowker stuff]
+	Some fundamental definitions related to Dowker dissimilarities.
+\begin{itemize}
+\item A \textit{Dowker dissimilarity} $\Lambda$ consists of two sets $L$ and $W$, and a function $\Lambda\colon L\times W\to P^*$ where $P$ is some poset.
+
+\item Given $l\in L$ and $p\in P$, define the \textit{ball of radius $p$ centred at $l$} to be the set $B_\Lambda(l,p):=\{w\in W\mid\Lambda(l,w)(p)=1\}$. 
+
+\item Given some $p$ in $P$, define $\Lambda_p:=\{(l,w)\in L\times W\mid w\in B_\Lambda(l,p)\}$.
+
+\item The \textit{Dowker nerve} $N\Lambda$ of $\Lambda$ is the collection of simplicial complexes indexed over $P$ defined in degree $p$ as 
+$$
+(N\Lambda)_{p} = \left\{\sigma\subseteq L\mid\sigma\text{ is finite and } \exists w\in W \text{ with } w\in B_\Lambda(l,p)\text{ for all }l\in\sigma \right\}.
+$$
+
+In other words, the Dowker nerve $(N\Lambda)_p$ is the nerve of the covering $\{B_\Lambda(l,p)\}_{l\in L}$.
+\end{itemize}
+\end{defn} 
+
+
+Note that if $p\leq p'$ for $p,p'\in P$, then we have an inclusion $N\Lambda_{p\leq p'}\colon N\Lambda_p\hookrightarrow N\Lambda_{p'}$.
+
+\begin{ex}[Čech filtration]
+
+Consider the poset $P=[0,\infty)$ and let $L\subset W=\R^d$. If we set $\Lambda\colon L\times W\to P^*$ to be the dissimilarity defined for $t\in P$ by 
+$$
+\Lambda(l,w)(t) := \begin{cases}
+	1\quad\text{if }t\geq d(l,w) \text{ and}\\
+	0\quad\text{otherwise}
+\end{cases}
+$$
+then we have $\sigma\in N\Lambda_t$ if and only if there exists some $w\in\R^d$ with $d(l,w)\leq t$ for all $l\in\sigma$. The existence of such a $w$ is equivalent to the intersection $\bigcap_{l\in L}B_t(l)$ being non-empty or in other words, the Dowker nerve of $\Lambda$ is the usual ambient Čech complex of $L$.
+\end{ex}
+
+\begin{ex}[Multicover filtration]
+
+Consider the poset $P=\N^{op}\times[0,\infty)$ and let $L=\mathcal{P}(X)$ where $X\subset W=\R^d$. Define the Dowker dissimilarity $\Lambda\colon L\times W\to P^*$ be the Dowker dissimilarity defined by
+$$
+\Lambda(A,y)(k,t) := \begin{cases}
+	1\quad\text{if }(k,t)\geq(|A|,\,d_H(\{y\},A))\text{ and}\\
+	0\quad\text{otherwise.}
+\end{cases}
+$$
+
+Since $d_H(\{y\}, A)=\max_{a\in A}d(y,a)$, we see that
+$$
+B_\Lambda(A,(k,t)):=\begin{cases}
+	\bigcap_{a\in A}B_t(a)\quad\text{if }k\leq |A| \text{ and}\\
+	\emptyset\quad\text{otherwise.}
+\end{cases}
+$$
+
+Following the notation in \autocite{buchet2023sparse}, let $\binom{X}{k}$ denote the set of all subsets $A\subseteq X$ with $|A|=k$, and define the lens $L_t(A)$ corresponding to $A\in\binom{X}{k}$ by $L_t(A)=\bigcap_{a\in A}B_t(a)$. The \textit{$k$-fold cover} $L(t,X)$ of $X$ at scale $t$ is defined as $L(t,X)=\bigcup_{A\in\binom{X}{k}}L_t(A)$. The \textit{$k$th order Čech complex with radius} $t$ over $X$, denoted by $\text{\v{C}ech}_t(X,k)$, is defined as the nerve of the covering $\{L_t(A)\}_{A\in\binom{X}{k}}$ of $L(t, X)$.
+
+The Dowker nerve $N\Lambda_{(k,t)}$ is homotopy equivalent to the higher order Čech complex $\text{\v{C}ech}_t(X,k)$. By the nerve lemma, the Dowker nerve is homotopy equivalent to the union 
+$$
+\bigcup_{A\in\mathcal{P}(X)}B_\Lambda(A,(k,t)) = \bigcup_{\substack{A\in\mathcal{P}(X)\\|A|\geq k}}\bigcap_{a\in A}B_t(a) = \bigcup_{A\in\binom{X}{k}}L_t(A) = L(t,X)
+$$
+and $L(t,X)\simeq\text{\v{C}ech}_t(X,k)$, again by application of the nerve lemma. (The second equality above follows from the fact that if $|A|>k$ then we can remove points from $A$ to obtain $A'$ with $|A'|=k$ and $B_\Lambda(A,(k,t))\subset B_\Lambda(A',(k,t))$.)
+
+Note that $\text{\v{C}ech}_t(X,k)\subsetneq N\Lambda_{(k,t)}$ since the two complexes have different vertex sets $\binom{X}{k}$ and $\mathcal{P}(X)$, respectively.
+
+\end{ex}
+
+
+\section{Truncated nerves}
+
+\begin{defn}
+A \textit{translation function} $\alpha\colon P\to P$ is an order preserving function which satisfies $p\leq\alpha(p)$ for all $p\in P$. 
+\end{defn}
+
+\begin{ex}
+Let $P=[0,\infty)$ and $a,b\in\R$ with $a>1$ and $b\geq 0$. Then $\alpha\colon t\mapsto at+b$ is a translation function.
+\end{ex}
+
+Given a dissimilarity $\Lambda\colon L\times W\to P^*$ and a translation function $\alpha\colon P\to P$, a function $T\colon L\to P$ is said to be an \textit{$\alpha$-truncation function for $\Lambda$} if for all $p\in P$ and all $l\in L$, there exists $l'\in L$ such that for all $w\in W$
+\begin{equation}\label{eq:truncation-function-condition}
+w\in B_\Lambda(l,p) \implies w\in B_\Lambda(l',\alpha(p))\cap B_\Lambda(l',T(l')).
+\end{equation}
+
+The \textit{$T$-truncation} $\Gamma\colon L\times W\to P^*$ of a dissimilarity $\Lambda$ is the dissimilarity defined by letting
+$$
+\Gamma(l,w):=\begin{cases}
+	\Lambda(l,w)\quad\text{if }w\in B_\Lambda(l, T(l)),\\
+	\infty\quad\text{otherwise.}
+\end{cases}
+$$
+
+Given a dissimilarity $\Lambda\colon L\times W\to P^*$, a translation function $\alpha\colon P\to P$ and a $\alpha$-truncation function $T\colon L\to P$, define the function $f_p\colon L\to L$ by picking for each $l\in L$ an element $l'\in L$ satisfying \cref{eq:truncation-function-condition} and set $f_p(l)=l'$.
+
+The map $f_p$ induces a simplicial map $N\Lambda_p\to N\Gamma_{\alpha(p)}$. To see this, let $\sigma\in N\Lambda_p$ and pick some $w\in W$ such that $w\in B_\Lambda(l,p)$ for all $l\in\sigma$. By construction of $f_p$ we have $w\in B_\Lambda(l',\alpha(p))$ and $w\in B_\Lambda(l',T(l'))$.
+
+
+$$
+\vdots
+$$
+
+
+\todo[inline, caption={}]{%
+\begin{itemize}
+	\item define interleavings.
+	\item complete the proof of proposition 4.3 in \autocite{blaser2019sparse}.
+	\item check definition 4.5 in \autocite{blaser2019sparse}.
+\end{itemize}
+}
+
+\printbibliography
+\end{document}
