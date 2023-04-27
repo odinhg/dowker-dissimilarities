@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  26 APR 2023 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  27 APR 2023 19:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -924,11 +924,28 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/share/texmf-dist/tex/latex/jknapltx/mathbbol.sty
 Package: mathbbol 1995/01/01
 \symbbold=\mathgroup6
+) (./tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+
+(./tikzlibrarycd.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+matrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+quotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen280
+\pgfarrowlength=\dimen281
+\pgfarrowwidth=\dimen282
+\pgfarrowlinewidth=\dimen283
+))) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip89
-\enit@outerparindent=\dimen280
+\enit@outerparindent=\dimen284
 \enit@toks=\toks49
 \enit@inbox=\box69
 \enit@count@id=\count447
@@ -1232,13 +1249,13 @@ Package biblatex Info: Reference segment=0 on input line 56.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count467
-\scratchdimen=\dimen281
+\scratchdimen=\dimen285
 \scratchbox=\box81
 \nofMPsegments=\count468
 \nofMParguments=\count469
 \everyMPshowfont=\toks55
 \MPscratchCnt=\count470
-\MPscratchDim=\dimen282
+\MPscratchDim=\dimen286
 \MPnumerator=\count471
 \makeMPintoPDFobject=\count472
 \everyMPtoPDFconversion=\toks56
@@ -1351,19 +1368,19 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/nt
-x-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] [2]
+x-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] [2] [
+3]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 177.
- [3]
+ine 198.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-179.
+200.
 
 (/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 179.
- [4] (./main.aux)
+(Font)              scaled to size 10.0pt on input line 200.
+ [4] [5] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1375,25 +1392,27 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37086 strings out of 476025
- 709950 string characters out of 5796532
- 1864388 words of memory out of 5000000
- 56943 multiletter control sequences out of 15000+600000
+ 38121 strings out of 476025
+ 741547 string characters out of 5796532
+ 1868388 words of memory out of 5000000
+ 57956 multiletter control sequences out of 15000+600000
  573707 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,9n,94p,1875b,2464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,14n,94p,1875b,2518s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texmf
 -dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/newpx/pxmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/pxsy
-s.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/t
-exmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1
-/public/txfonts/txsyb.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplb.
-pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texmf-
-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (4 pages, 153293 bytes).
+s.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/share/te
+xmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf-dist/fonts/type
+1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy
+a.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/t
+exmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fonts/type1/
+public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplri.pfb
+>
+Output written on main.pdf (5 pages, 166152 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 138 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
