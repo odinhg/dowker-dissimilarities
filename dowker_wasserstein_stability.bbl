@@ -1,0 +1,120 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{ynt/global//global/global}
+  \entry{Brun_2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Brun},
+         familyi={B\bibinitperiod},
+         given={Morten},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Blaser},
+         familyi={B\bibinitperiod},
+         given={Nello},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Springer Science}%
+      {Business Media {LLC}}%
+    }
+    \strng{namehash}{BMBN1}
+    \strng{fullhash}{BMBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{doi}
+    \verb 10.1007/s41468-019-00028-9
+    \endverb
+    \field{number}{1-2}
+    \field{pages}{1\bibrangedash 28}
+    \field{title}{Sparse Dowker nerves}
+    \verb{url}
+    \verb https://doi.org/10.1007%2Fs41468-019-00028-9
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Applied and Computational Topology}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{cao2022approximating}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=CY}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Yueqi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Monod},
+         familyi={M\bibinitperiod},
+         given={Anthea},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CYMA1}
+    \strng{fullhash}{CYMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{eprint}
+    \verb 2204.09155
+    \endverb
+    \field{title}{Approximating Persistent Homology for Large Datasets}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{stat.ML}
+    \field{year}{2022}
+  \endentry
+
+  \entry{skraba2022wasserstein}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=SP}{%
+         family={Skraba},
+         familyi={S\bibinitperiod},
+         given={Primoz},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Turner},
+         familyi={T\bibinitperiod},
+         given={Katharine},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPTK1}
+    \strng{fullhash}{SPTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{2}
+    \field{sortinithash}{2}
+    \verb{eprint}
+    \verb 2006.16824
+    \endverb
+    \field{title}{Wasserstein Stability for Persistence Diagrams}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{math.AT}
+    \field{year}{2022}
+  \endentry
+\enddatalist
+\endinput

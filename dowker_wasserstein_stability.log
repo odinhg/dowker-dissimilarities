@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  3 MAY 2023 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  4 MAY 2023 15:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**dowker_wasserstein_stability.tex
+(./dowker_wasserstein_stability.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 
@@ -1182,8 +1182,9 @@ File: t1zpltlf.fd 2021/05/25 v1.0 font definition file for T1/zpl/TLF
 )
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 4.
- (./main.aux)
-\openout1 = `main.aux'.
+
+(./dowker_wasserstein_stability.aux)
+\openout1 = `dowker_wasserstein_stability.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 4.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
@@ -1243,15 +1244,21 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout3 = `main-blx.bib'.
+\openout3 = `dowker_wasserstein_stability-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
+Package biblatex Info: ... file 'dowker_wasserstein_stability.bbl' found.
+
+(./dowker_wasserstein_stability.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Brun_2019':
+(biblatex)                - Invalid format of field 'month'.
+
+)
 Package biblatex Info: Reference section=0 on input line 4.
 Package biblatex Info: Reference segment=0 on input line 4.
-
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count467
 \scratchdimen=\dimen285
@@ -1281,28 +1288,27 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Command `\dddot' is already robust on input line 4.
 LaTeX Info: Command `\ddddot' is already robust on input line 4.
 Package hyperref Info: Link coloring OFF on input line 4.
- (./main.out)
-(./main.out)
+
+(./dowker_wasserstein_stability.out) (./dowker_wasserstein_stability.out)
 \@outlinefile=\write5
-\openout5 = `main.out'.
+\openout5 = `dowker_wasserstein_stability.out'.
 
 \c@mv@tabular=\count473
 \c@mv@boldtabular=\count474
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 6.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Trying to load font information for OT1+zplTLF on input lin
 e 6.
- (/usr/share/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
+
+(/usr/share/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2021/05/25 v1.0 font definition file for OT1/zpl/TLF
 )
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 17.28pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 12.5pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
+(Font)              scaled to size 9.4pt on input line 6.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1317,9 +1323,12 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 6
 .
 
 (/usr/share/texmf-dist/tex/latex/bbold/Ubbold.fd)
+
+LaTeX Font Warning: Font shape `U/bbold/m/n' in size <12.5> not available
+(Font)              size <12> substituted on input line 6.
+
 LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
 6.
-
 (/usr/share/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
@@ -1335,87 +1344,103 @@ LaTeX Font Info:    Trying to load font information for U+npxsyc on input line
 (/usr/share/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 6.
+
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 7.
+(Font)              scaled to size 14.4pt on input line 6.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 7.
+(Font)              scaled to size 14.4pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 9.
+(Font)              scaled to size 10.0pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 9.
+(Font)              scaled to size 7.3pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 9.
+(Font)              scaled to size 5.5pt on input line 7.
 
 LaTeX Font Warning: Font shape `U/bbold/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 9.
+(Font)              size <5> substituted on input line 7.
 
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 11.
-LaTeX Font Info:    Trying to load font information for TS1+zplTLF on input lin
-e 14.
-(/usr/share/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
-File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zplTLF
-)
-LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 14.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 14.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 14.
+(Font)              scaled to size 7.3pt on input line 12.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 14.
+(Font)              scaled to size 5.5pt on input line 12.
+LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
+e 16.
+(/usr/share/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 16.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 16.
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 8.0pt on input line 16.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/nt
-x-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] [2] [
-3]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 146.
+x-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}] [2]
+ [3] [4]
+LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 113.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-148.
+113.
 
 (/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 148.
- [4] [5] (./main.aux)
+(Font)              scaled to size 10.0pt on input line 113.
+ [5{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] (./dowker_w
+asserstein_stability.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 064272A3990042B84E54D54A28DE41CD;229.
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+Package rerunfilecheck Info: File `dowker_wasserstein_stability.out' has not ch
+anged.
+(rerunfilecheck)             Checksum: 45CEE90BA44778F0B8288ABFDC9099F8;347.
+Package logreq Info: Writing requests to 'dowker_wasserstein_stability.run.xml'
+.
+\openout1 = `dowker_wasserstein_stability.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38127 strings out of 476025
- 741637 string characters out of 5796532
- 1868388 words of memory out of 5000000
- 57959 multiletter control sequences out of 15000+600000
- 573707 words of font info for 133 fonts, out of 8000000 for 9000
+ 37968 strings out of 476025
+ 737735 string characters out of 5796532
+ 1867388 words of memory out of 5000000
+ 57791 multiletter control sequences out of 15000+600000
+ 601432 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,14n,99p,1898b,2518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,11n,99p,1922b,1773s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texmf
 -dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/newpx/pxmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/pxsy
-s.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/stxscr.pfb></usr/share/te
-xmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf-dist/fonts/type
-1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy
-a.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/t
-exmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fonts/type1/
-public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplri.pfb
->
-Output written on main.pdf (5 pages, 166026 bytes).
+e1/public/newpx/npxsups-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/n
+ewpx/pxmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr
+/share/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf-dist/f
+onts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/txf
+onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
+r/share/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fon
+ts/type1/public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/
+zplri.pfb>
+Output written on dowker_wasserstein_stability.pdf (5 pages, 168681 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

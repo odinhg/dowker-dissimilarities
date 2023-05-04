@@ -1,0 +1,115 @@
+\include{preamble.tex}
+\title{Wasserstein stability for the $p$-Dowker nerve}
+
+\begin{document}
+	\maketitle
+	\section{Setting}	
+	We fix a real number $p\geq 1$ and endow the interval $[0,\infty]$ with the binary operation $\otimes\colon [0,\infty]^2\to [0,\infty]$ defined by $t\otimes s := (t^p + s^p)^{\frac{1}{p}}$.
+
+	\begin{defn}
+ 		Given a Dowker dissimilarity $\Lambda\colon L\times W\to[0,\infty]$, define the \textit{$p$-Dowker nerve} $D\Lambda$ of $\Lambda$ by letting
+			$$
+				D\Lambda_t := \left\{\sigma\subseteq L\mid \exists w\in W\text{ such that }\bigotimes_{l\in\sigma}\Lambda(l,w)\leq t\right\}\text{ for }t\in[0,\infty).
+			$$
+	\end{defn}
+
+	Let $W=\R^d$ be equipped with the Euclidean distance $d(x,y)=\Vert x-y\Vert_2$, and let $L$ and $L'$ be finite subsets of $W$ with $|L|=|L'|$\footnote{It would be nice if we could drop this assumption.}. Define the Dowker dissimilarity $\Gamma\colon W\times W\to [0,\infty]$ by letting $\Gamma(w,w')=d(w,w')$, and let $\Lambda=\Gamma\mid_{L\times W}$ and $\Lambda'=\Gamma\mid_{L'\times W}$. Setting $p=\infty$ we have that $D\Lambda$ and $D\Lambda'$ are the ambient Čech filtrations of the point clouds $L$ and $L'$, respectively. In this case, we have classical stability, i.e., the bottleneck distance between the persistence diagrams are upper-bounded by the Hausdorff distance between the two point clouds. In this note, we apply the Cellular Wasserstein Stability Theorem of \autocite{skraba2022wasserstein} to establish an analogous stability result for the case $1\leq p<\infty$.
+	
+	\section{Definitions}
+	
+	Let $D$ and $D'$ be two persistence diagrams. A \textit{matching} $M$ between $D$ and $D'$ is a set of pairs $(x,y)$ with $x\in X\cup\Delta$, $y\in Y\cup\Delta$ and every $x\in X$ and $y\in Y$ is used exactly once. Here $\Delta$ denotes the diagonal.
+	
+	\begin{defn}[$p$-Wasserstein distance]
+		Given $p\geq 1$, the \textit{$p$-Wasserstein distance} between $D$ and $D'$ is defined as
+		$$
+			\textbf{W}_p(D,D') := \inf_{M} \left(\sum_{(x,y)\in M}\Vert x-y\Vert^p_p\right)^{\frac{1}{p}}
+		$$
+		where $M$ ranges over all matchings between the two diagrams. If $D=(D_k)_k$ and $D'=(D'_k)_k$, which is the case when we consider different homological dimensions, we define the \textit{total $p$-Wasserstein distance} by
+		$$
+			\textbf{W}_p(D,D') := \left(\sum_k W_p(D_k,D_k')^p\right)^{\frac{1}{p}}.
+		$$
+	\end{defn}
+
+	\begin{defn}[$L^p$ norm]
+		Let $K$ be a finite CW-complex. The \textit{$L^p$ norm} of a function $f\colon K\to\R$ is given by $\Vert f\Vert_p = \left(\sum_{\sigma\in K}\vert f(\sigma)\vert^p\right)^{\frac{1}{p}}$. Given two monotone functions $f,g\colon K\to\R$, the \textit{$L^p$ distance} between $f$ and $g$ is the distance induced by the $L^p$ norm. That is,
+		$$
+		\Vert f-g\Vert_p = \left(\sum_{\sigma\in K}\vert f(\sigma) - g(\sigma)\vert^p\right)^{\frac{1}{p}}.
+		$$
+	\end{defn}
+
+	 Let $L$ and $L'$ be finite subsets of $\R^d$. A subset $C\subseteq L\times L'$ is called a \textit{correspondence} between $L$ and $L'$ if for each $l\in L$ there exists an $l'\in L$ with $(l,l')\in C$, and for each $l'\in L$ there exists an $l\in L$ such that $(l,l')\in C$. Let $\textbf{C}(L,L')$ denote the set of all correspondences between $L$ and $L'$. The following definition of the $p$-Hausdorff distance between point sets appears in \autocite{cao2022approximating}.
+
+	\begin{defn}[$p$-Hausdorff distance]
+		For $p\geq 1$, we define the \textit{$p$-Hausdorff} distance between $L$ and $L'$ by
+		$$
+		\textbf{H}_p(L,L') := \inf_{C\in\textbf{C}(L,L')}\left(\sum_{(l,l')\in C}\Vert l - l'\Vert_2^p\right)^{\frac{1}{p}}
+		$$
+	\end{defn}
+
+
+	Note that if $|L|=|L'|$ and $C\in\textbf{C}(L,L')$ is the correspondence minimizing the expression $\left(\sum_{(l,l')\in C}\Vert l - l'\Vert_2^p\right)^{\frac{1}{p}}$, then $C$ is necessarily a bijection.
+
+	\section{Stability}
+	\begin{thm}[Cellular Wasserstein Stability Theorem \autocite{skraba2022wasserstein}]\label{thm:cellular_wasserstein_stability}
+		Let $K$ be a finite CW complex and let $f,g\colon K\to\R$ be monotone functions. Then
+		$$
+			\textbf{W}_p(\Dgm(f), \Dgm(g))\leq\Vert f-g\Vert_p.
+		$$
+		For a fixed homological dimension $k$, we have
+		$$
+			\textbf{W}_p(\Dgm_k(f), \Dgm_k(g))^p \leq \sum_{k\leq \dim(\sigma)\leq k+1}\vert f(\sigma)-g(\sigma)\vert^p.
+		$$
+	\end{thm}
+
+	For the rest of this section, let $L$ and $L'$ be finite subsets of $W=\R^d$ with $n=|L|=|L'|$. Define the Dowker dissimilarity $\Gamma\colon W\times W\to [0,\infty]$ by letting $\Gamma(w,w')=d(w,w')$, and let $\Lambda=\Gamma\mid_{L\times W}$ and $\Lambda'=\Gamma\mid_{L'\times W}$. Let $\Dgm(\Lambda)$ denote the persistence diagram corresponding to the sublevel set homology of the filtration function $D\Lambda\to\R$ defined by 
+	\begin{equation}\label{eq:filtration_function}
+		\sigma\mapsto \inf\{t\in[0,\infty]\mid\sigma\in D\Lambda_t\} = \inf_{w\in W}\bigotimes_{l\in\sigma}\Lambda(l,w)=\inf_{w\in W}\left(\sum_{l\in\sigma}\Vert l-w\Vert_2^p\right)^{\frac{1}{p}}.
+	\end{equation}
+
+	\begin{cor}[Stability of the $p$-Dowker nerve]
+		Let $\Lambda$ and $\Lambda'$ be defined as above. Then
+		$$
+			\textbf{W}_p(\Dgm(\Lambda), \Dgm(\Lambda'))\leq C\cdot\textbf{H}_p(L,L').
+		$$
+		where $C=(2^n-1)^{\frac{1}{p}}$.
+	\end{cor}
+
+	\begin{proof}
+		Let $C$ be a minimizing correspondence in the $p$-Hausdorff distance $\textbf{H}_p(L,L')$. Since $|L|=|L'|$ this defines a bijection $\varphi\colon L\to L'$. Let $f\colon D\Lambda\to\R$ be the filtration function defined in \cref{eq:filtration_function}. Similarly, let $f'\colon D\Lambda'\to\R$ be the filtration function for $D\Lambda'$ and define $g:=f'\circ\varphi\colon D\Lambda\to\R$. For $\sigma\in D\Lambda$, we have
+		
+		\begin{align*}
+			\vert f(\sigma) - g(\sigma)\vert &= \left\vert \inf_{w\in W}\bigotimes_{l\in\sigma}\Lambda(l,w) - \inf_{w\in W}\bigotimes_{l\in\sigma}\Lambda(\varphi(l),w)\right\vert\\
+			&\overset{(1)}\leq\sup_{w\in W}\left\vert\bigotimes_{l\in\sigma}\Lambda(l,w)-\bigotimes_{l\in\sigma}\Lambda(\varphi(l),w)\right\vert\\
+			&=\sup_{w\in W}\left\vert \left(\sum_{l\in\sigma}\Vert l-w\Vert_2^p\right)^{\frac{1}{p}} - \left(\sum_{l\in\sigma}\Vert \varphi(l)-w\Vert_2^p\right)^{\frac{1}{p}}\right\vert \\
+			&\overset{(2)}\leq\sup_{w\in W}\left\vert \left(\sum_{l\in\sigma}\vert\Vert l-w\Vert_2-\Vert \varphi(l)-w\Vert_2\vert^p \right)^{\frac{1}{p}} \right\vert\\
+			&\overset{(3)}\leq\sup_{w\in W}\left(\sum_{l\in\sigma}\Vert l-\varphi(l)\Vert_2^p \right)^{\frac{1}{p}} =\left(\sum_{l\in\sigma}\Vert l-\varphi(l)\Vert_2^p \right)^{\frac{1}{p}}\leq\textbf{H}_p(L,L') \\
+		\end{align*}
+	
+		In $(1)$ we used the inequality $\vert\inf f - \inf g\vert\leq \sup\vert f-g\vert$. In $(2)$ and $(3)$ we used the reverse triangle inequality $\vert\Vert x\Vert-\Vert y\Vert\vert\leq\Vert x-y\Vert$ for the $L^p$ norm and the $L^2$ norm, respectively. Applying \cref{thm:cellular_wasserstein_stability} we then get
+		
+		\begin{align*}
+			\textbf{W}_p(\Dgm(\Lambda), \Dgm(\Lambda'))&\leq \Vert f-g\Vert_p = \left(\sum_{\sigma\in D\Lambda}\vert f(\sigma)-g(\sigma)\vert^p\right)^{\frac{1}{p}}\\
+			&\leq\left(\sum_{\sigma\in D\Lambda}\textbf{H}_p(L,L')^p\right)^{\frac{1}{p}}\\
+			&= \left(\sum_{k=1}^n\binom{n}{k}\right)^{\frac{1}{p}}\textbf{H}_p(L,L')\\
+			&=(2^n-1)^{\frac{1}{p}}\textbf{H}_p(L,L')
+		\end{align*}
+		
+		Similarly, if we fix the homological dimension $k\geq0$, we get that
+		\begin{align*}
+			\textbf{W}_p(\Dgm_k(\Lambda), \Dgm_k(\Lambda'))&\leq\left(\binom{n}{k}+\binom{n}{k+1}\right)^{\frac{1}{p}}\textbf{H}_p(L,L') = \binom{n+1}{k+1}^{\frac{1}{p}}\textbf{H}_p(L,L').
+		\end{align*}
+	
+	\end{proof}
+
+	\section{Comments}
+	\begin{enumerate}
+		\item We use $q=p$ in the Wasserstein distance. Can we generalize for other choices of $q$? (See definition in \autocite{skraba2022wasserstein} for example.)
+		\item In the definition of the $p$-Hausdorff distance and the dissimilarities we use $q=2$. Other choices of $q$ are probably interleaved with ours.
+		\item What about the case when $|L|\neq|L'|$?
+		\item Any natural alternatives for the $p$-Hausdorff distance as it is defined in this note?
+		\item Could be interesting to look at the part about stability in \autocite{Brun_2019}[p.~14-16].
+	\end{enumerate}
+
+	\printbibliography
+
+\end{document}
