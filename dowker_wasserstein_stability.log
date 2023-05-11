@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  4 MAY 2023 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  11 MAY 2023 13:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1394,19 +1394,22 @@ LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/nt
 x-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}] [2]
- [3] [4]
-LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 113.
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-113.
+ [3]
+Overfull \hbox (2.91579pt too wide) detected at line 98
+[]
+ []
 
+LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 110.
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
+110.
 (/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 113.
- [5{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] (./dowker_w
-asserstein_stability.aux)
+(Font)              scaled to size 10.0pt on input line 110.
+ [4{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [5] (./dowk
+er_wasserstein_stability.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1420,9 +1423,9 @@ Package logreq Info: Writing requests to 'dowker_wasserstein_stability.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 37968 strings out of 476025
- 737735 string characters out of 5796532
- 1867388 words of memory out of 5000000
+ 37967 strings out of 476025
+ 737729 string characters out of 5796532
+ 1869388 words of memory out of 5000000
  57791 multiletter control sequences out of 15000+600000
  601432 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1437,10 +1440,10 @@ onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
 r/share/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fon
 ts/type1/public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/
 zplri.pfb>
-Output written on dowker_wasserstein_stability.pdf (5 pages, 168681 bytes).
+Output written on dowker_wasserstein_stability.pdf (5 pages, 167438 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
