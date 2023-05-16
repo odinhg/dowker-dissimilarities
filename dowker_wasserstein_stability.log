@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  11 MAY 2023 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  16 MAY 2023 15:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -992,6 +992,34 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@totalupperbox=\box79
 \tcb@totallowerbox=\box80
 )
+(/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
+Package: standalone 2022/10/10 v1.3b Package to include TeX sub-files with prea
+mbles
+
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2022/10/10 v0.8 Provides the file path elements of the curren
+t input file
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook-2020.sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count452
+)
+
+Package standalone Warning: Required package 'gincltex' not found.
+(standalone)                The \includestandalone feature is disabled.
+
+(/usr/share/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
 (/usr/share/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2022/01/30 v1.504(Michael Sharpe) latex and unicode latex su
 pport for TeXGyrePagellaX
@@ -1010,8 +1038,8 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count452
-\decimalpart=\count453
+\integerpart=\count453
+\decimalpart=\count454
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
@@ -1020,7 +1048,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count454
+\zpl@cnt=\count455
 
 (/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1050,7 +1078,7 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 \px@tA=\toks52
 \px@tB=\toks53
 \px@su=\read5
-\px@Isdigit=\count455
+\px@Isdigit=\count456
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 211.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/zplTLF/m/n on input line 211.
@@ -1133,8 +1161,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsPXA' in version `bold'
 
 (Font)                  U/npxexa/m/n --> U/npxexa/b/n on input line 334.
-\px@cntz=\count456
-\px@IsAlNum=\count457
+\px@cntz=\count457
+\px@IsAlNum=\count458
 \px@sbptoks=\toks54
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 489.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 490.
@@ -1164,16 +1192,16 @@ LaTeX Info: Redefining \not on input line 2457.
 LaTeX Info: Redefining \textsquare on input line 2472.
 LaTeX Info: Redefining \openbox on input line 2474.
 )
-\c@thm=\count458
-\c@lem=\count459
-\c@cor=\count460
-\c@prop=\count461
-\c@rem=\count462
-\c@ill=\count463
-\c@ex=\count464
+\c@thm=\count459
+\c@lem=\count460
+\c@cor=\count461
+\c@prop=\count462
+\c@rem=\count463
+\c@ill=\count464
+\c@ex=\count465
 )
-\@quotelevel=\count465
-\@quotereset=\count466
+\@quotelevel=\count466
+\@quotereset=\count467
 LaTeX Font Info:    Trying to load font information for T1+zplTLF on input line
  4.
 
@@ -1260,16 +1288,16 @@ Package biblatex Info: Reference section=0 on input line 4.
 Package biblatex Info: Reference segment=0 on input line 4.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count467
+\scratchcounter=\count468
 \scratchdimen=\dimen285
 \scratchbox=\box81
-\nofMPsegments=\count468
-\nofMParguments=\count469
+\nofMPsegments=\count469
+\nofMParguments=\count470
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count470
+\MPscratchCnt=\count471
 \MPscratchDim=\dimen286
-\MPnumerator=\count471
-\makeMPintoPDFobject=\count472
+\MPnumerator=\count472
+\makeMPintoPDFobject=\count473
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1293,8 +1321,8 @@ Package hyperref Info: Link coloring OFF on input line 4.
 \@outlinefile=\write5
 \openout5 = `dowker_wasserstein_stability.out'.
 
-\c@mv@tabular=\count473
-\c@mv@boldtabular=\count474
+\c@mv@tabular=\count474
+\c@mv@boldtabular=\count475
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 6.
 LaTeX Font Info:    Trying to load font information for OT1+zplTLF on input lin
@@ -1379,54 +1407,59 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 12.
 LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
-e 16.
+e 17.
 (/usr/share/texmf-dist/tex/latex/newpx/t1zplsups.fd
 File: t1zplsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 16.
+(Font)              scaled to size 10.0pt on input line 17.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 16.
+(Font)              scaled to size 8.0pt on input line 17.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 8.0pt on input line 16.
+(Font)              scaled to size 8.0pt on input line 17.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/nt
 x-ot1-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}] [2]
  [3]
-Overfull \hbox (2.91579pt too wide) detected at line 98
+Overfull \hbox (2.91579pt too wide) detected at line 99
 []
  []
 
+(./figs/duplicated_point_dowker_p_nerve.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 110.
+(Font)              scaled to size 10.0pt on input line 126.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-110.
-(/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
+126.
+ (/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 110.
- [4{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] [5] (./dowk
-er_wasserstein_stability.aux)
+(Font)              scaled to size 10.0pt on input line 126.
+ [5{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] (./dowker_w
+asserstein_stability.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `dowker_wasserstein_stability.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 45CEE90BA44778F0B8288ABFDC9099F8;347.
+(rerunfilecheck)             Checksum: 574888EFE1C8682784675480C575B20C;483.
 Package logreq Info: Writing requests to 'dowker_wasserstein_stability.run.xml'
 .
 \openout1 = `dowker_wasserstein_stability.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37967 strings out of 476025
- 737729 string characters out of 5796532
- 1869388 words of memory out of 5000000
- 57791 multiletter control sequences out of 15000+600000
+ 38612 strings out of 476025
+ 751574 string characters out of 5796532
+ 1873388 words of memory out of 5000000
+ 58407 multiletter control sequences out of 15000+600000
  601432 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,11n,99p,1922b,1773s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1440,10 +1473,10 @@ onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
 r/share/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fon
 ts/type1/public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/
 zplri.pfb>
-Output written on dowker_wasserstein_stability.pdf (5 pages, 167438 bytes).
+Output written on dowker_wasserstein_stability.pdf (5 pages, 172543 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

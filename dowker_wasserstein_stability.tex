@@ -7,10 +7,11 @@
 	We fix a real number $p\geq 1$ and endow the interval $[0,\infty]$ with the binary operation $\otimes\colon [0,\infty]^2\to [0,\infty]$ defined by $t\otimes s := (t^p + s^p)^{\frac{1}{p}}$.
 
 	\begin{defn}
- 		Given a Dowker dissimilarity $\Lambda\colon L\times W\to[0,\infty]$, define the \textit{$p$-Dowker nerve} $D\Lambda$ of $\Lambda$ by letting
+ 		Given a Dowker dissimilarity $\Lambda\colon L\times W\to[0,\infty]$, define the \textit{$p$-Dowker nerve} $D^p\Lambda$ of $\Lambda$ by letting
 			$$
-				D\Lambda_t := \left\{\sigma\subseteq L\mid \exists w\in W\text{ such that }\bigotimes_{l\in\sigma}\Lambda(l,w)\leq t\right\}\text{ for }t\in[0,\infty).
+				D^p\Lambda_t := \left\{\sigma\subseteq L\mid \exists w\in W\text{ such that }\bigotimes_{l\in\sigma}\Lambda(l,w)\leq t\right\}\text{ for }t\in[0,\infty).
 			$$
+		We sometimes allow ourselves to suppress the $p$ and just write $D\Lambda$.
 	\end{defn}
 
 	Let $W=\R^d$ be equipped with the Euclidean distance $d(x,y)=\Vert x-y\Vert_2$, and let $L$ and $L'$ be finite subsets of $W$ with $|L|=|L'|$\footnote{It would be nice if we could drop this assumption.}. Define the Dowker dissimilarity $\Gamma\colon W\times W\to [0,\infty]$ by letting $\Gamma(w,w')=d(w,w')$, and let $\Lambda=\Gamma\mid_{L\times W}$ and $\Lambda'=\Gamma\mid_{L'\times W}$. Setting $p=\infty$ we have that $D\Lambda$ and $D\Lambda'$ are the ambient Čech filtrations of the point clouds $L$ and $L'$, respectively. In this case, we have classical stability, i.e., the bottleneck distance between the persistence diagrams are upper-bounded by the Hausdorff distance between the two point clouds. In this note, we apply the Cellular Wasserstein Stability Theorem of \autocite{skraba2022wasserstein} to establish an analogous stability result for the case $1\leq p<\infty$.
@@ -98,6 +99,21 @@
 		\end{align*}
 	
 	\end{proof}
+	
+	\section{Duplicating points}
+	The Čech nerve $N^\infty\Lambda$ does not change, up to homotopy, if we duplicate a point that is already in the point set. This is however not the case for the $p$-nerve in general as the following example shows.
+	
+	\begin{ex}
+		Let $p=2$ and consider the point set $L=\{x,y\}\subset\R^2$ with $x\neq y$. Clearly, the Dowker $p$-nerve $D\Lambda$ has trivial $1$-homology. Now, suppose we duplicate the point $x$. That is, let $L'=\{x,x',y\}$ with $x=x'$. The $2$-simplex $\sigma=\{x,x',y\}$ is born at time $d=\sqrt{\frac{2}{3}}\Vert x-y\Vert_2$. However, the faces of $\sigma$ are born at time $0$ or $b=\sqrt{\frac{1}{2}}\Vert x-y\Vert_2$, meaning that we have a non-trivial persistent $1$-cycle in $D\Lambda'$. Note that in the $p=\infty$ case, the $2$-simplex will have the same birth time as its faces killing any new cycles. The $2$-Wasserstein distance between the persistence diagrams (in homological dimension $1$) corresponding $\Lambda$ and $\Lambda'$ can then be computed to be $\frac{d-b}{\sqrt{2}}$ which is proportional to the distance between $x$ and $y$.
+		
+		\begin{figure}[h!]
+			\centering
+			\includestandalone[width=.8\textwidth]{figs/duplicated_point_dowker_p_nerve}
+			\caption{Duplicating a point can lead to the birth of a new non-trivial cycle. In the $p=\infty$ case, the triangle would already be filled in at $t=b$.}
+		\end{figure}
+
+		
+	\end{ex}
 
 	\section{Comments}
 	\begin{enumerate}

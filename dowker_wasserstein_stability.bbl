@@ -57,36 +57,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{cao2022approximating}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=CY}{%
-         family={Cao},
-         familyi={C\bibinitperiod},
-         given={Yueqi},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Monod},
-         familyi={M\bibinitperiod},
-         given={Anthea},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CYMA1}
-    \strng{fullhash}{CYMA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{2}
-    \field{sortinithash}{2}
-    \verb{eprint}
-    \verb 2204.09155
-    \endverb
-    \field{title}{Approximating Persistent Homology for Large Datasets}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{stat.ML}
-    \field{year}{2022}
-  \endentry
-
   \entry{skraba2022wasserstein}{misc}{}
     \name{author}{2}{}{%
       {{hash=SP}{%
