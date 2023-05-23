@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  3 MAY 2023 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  16 MAY 2023 16:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -992,6 +992,34 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@totalupperbox=\box79
 \tcb@totallowerbox=\box80
 )
+(/usr/share/texmf-dist/tex/latex/standalone/standalone.sty
+Package: standalone 2022/10/10 v1.3b Package to include TeX sub-files with prea
+mbles
+
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2022/10/10 v0.8 Provides the file path elements of the curren
+t input file
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook-2020.sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count452
+)
+
+Package standalone Warning: Required package 'gincltex' not found.
+(standalone)                The \includestandalone feature is disabled.
+
+(/usr/share/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
 (/usr/share/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2022/01/30 v1.504(Michael Sharpe) latex and unicode latex su
 pport for TeXGyrePagellaX
@@ -1010,8 +1038,8 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count452
-\decimalpart=\count453
+\integerpart=\count453
+\decimalpart=\count454
 )
 Package: xstring 2023/01/14 v1.85 String manipulations (CT)
 )
@@ -1020,7 +1048,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count454
+\zpl@cnt=\count455
 
 (/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1050,7 +1078,7 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 \px@tA=\toks52
 \px@tB=\toks53
 \px@su=\read5
-\px@Isdigit=\count455
+\px@Isdigit=\count456
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 211.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/zplTLF/m/n on input line 211.
@@ -1133,8 +1161,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsPXA' in version `bold'
 
 (Font)                  U/npxexa/m/n --> U/npxexa/b/n on input line 334.
-\px@cntz=\count456
-\px@IsAlNum=\count457
+\px@cntz=\count457
+\px@IsAlNum=\count458
 \px@sbptoks=\toks54
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 489.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 490.
@@ -1164,16 +1192,16 @@ LaTeX Info: Redefining \not on input line 2457.
 LaTeX Info: Redefining \textsquare on input line 2472.
 LaTeX Info: Redefining \openbox on input line 2474.
 )
-\c@thm=\count458
-\c@lem=\count459
-\c@cor=\count460
-\c@prop=\count461
-\c@rem=\count462
-\c@ill=\count463
-\c@ex=\count464
+\c@thm=\count459
+\c@lem=\count460
+\c@cor=\count461
+\c@prop=\count462
+\c@rem=\count463
+\c@ill=\count464
+\c@ex=\count465
 )
-\@quotelevel=\count465
-\@quotereset=\count466
+\@quotelevel=\count466
+\@quotereset=\count467
 LaTeX Font Info:    Trying to load font information for T1+zplTLF on input line
  4.
 
@@ -1253,16 +1281,16 @@ Package biblatex Info: Reference segment=0 on input line 4.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count467
+\scratchcounter=\count468
 \scratchdimen=\dimen285
 \scratchbox=\box81
-\nofMPsegments=\count468
-\nofMParguments=\count469
+\nofMPsegments=\count469
+\nofMParguments=\count470
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count470
+\MPscratchCnt=\count471
 \MPscratchDim=\dimen286
-\MPnumerator=\count471
-\makeMPintoPDFobject=\count472
+\MPnumerator=\count472
+\makeMPintoPDFobject=\count473
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1286,8 +1314,8 @@ Package hyperref Info: Link coloring OFF on input line 4.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@mv@tabular=\count473
-\c@mv@boldtabular=\count474
+\c@mv@tabular=\count474
+\c@mv@boldtabular=\count475
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 6.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -1395,10 +1423,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38127 strings out of 476025
- 741637 string characters out of 5796532
+ 38564 strings out of 476025
+ 751248 string characters out of 5796532
  1868388 words of memory out of 5000000
- 57959 multiletter control sequences out of 15000+600000
+ 58373 multiletter control sequences out of 15000+600000
  573707 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,14n,99p,1898b,2518s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1412,7 +1440,7 @@ a.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/t
 exmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fonts/type1/
 public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplri.pfb
 >
-Output written on main.pdf (5 pages, 166026 bytes).
+Output written on main.pdf (5 pages, 166172 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams

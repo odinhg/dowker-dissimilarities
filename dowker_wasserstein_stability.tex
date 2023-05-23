@@ -103,8 +103,8 @@
 	\section{Duplicating points}
 	The Čech nerve $N^\infty\Lambda$ does not change, up to homotopy, if we duplicate a point that is already in the point set. This is however not the case for the $p$-nerve in general as the following example shows.
 	
-	\begin{ex}
-		Let $p=2$ and consider the point set $L=\{x,y\}\subset\R^2$ with $x\neq y$. Clearly, the Dowker $p$-nerve $D\Lambda$ has trivial $1$-homology. Now, suppose we duplicate the point $x$. That is, let $L'=\{x,x',y\}$ with $x=x'$. The $2$-simplex $\sigma=\{x,x',y\}$ is born at time $d=\sqrt{\frac{2}{3}}\Vert x-y\Vert_2$. However, the faces of $\sigma$ are born at time $0$ or $b=\sqrt{\frac{1}{2}}\Vert x-y\Vert_2$, meaning that we have a non-trivial persistent $1$-cycle in $D\Lambda'$. Note that in the $p=\infty$ case, the $2$-simplex will have the same birth time as its faces killing any new cycles. The $2$-Wasserstein distance between the persistence diagrams (in homological dimension $1$) corresponding $\Lambda$ and $\Lambda'$ can then be computed to be $\frac{d-b}{\sqrt{2}}$ which is proportional to the distance between $x$ and $y$.
+	\begin{ex}[Duplicating a point can change the Wasserstein distance between persistence diagrams]
+		Let $p=2$ and consider the point set $L=\{x,y\}\subset\R^2$ with $x\neq y$. Clearly, the Dowker $p$-nerve $D\Lambda$ has trivial $1$-homology. Now, suppose we duplicate the point $x$. That is, let $L'=\{x,x',y\}$ with $x=x'$. The $2$-simplex $\sigma=\{x,x',y\}$ is born at time $d=\sqrt{\frac{2}{3}}\Vert x-y\Vert_2$. However, the faces of $\sigma$ are born at time $0$ or $b=\sqrt{\frac{1}{2}}\Vert x-y\Vert_2$, meaning that we have a non-trivial persistent $1$-cycle in $D\Lambda'$. Note that in the $p=\infty$ case, the $2$-simplex will have the same birth time as its faces, killing any new cycles. The $2$-Wasserstein distance between the persistence diagrams (in homological dimension $1$) corresponding to $\Lambda$ and $\Lambda'$ can then be computed to be $\frac{d-b}{\sqrt{2}}$ which is proportional to the distance between $x$ and $y$.
 		
 		\begin{figure}[h!]
 			\centering
@@ -113,6 +113,28 @@
 		\end{figure}
 
 		
+	\end{ex}
+	
+	\section{Network distance}
+	A correspondence between two sets $X$ and $X'$ is a subset $C\subseteq X\times X'$ such that the projection maps to $X$ and $X'$ are onto. A non-negatively weighted network $\omega_X$ consists of a set $X$ together with a function $\omega_X\colon X\times X\to[0,\infty)$. We will typically be interested in weighted networks on the form $\omega_L=\Lambda=d\colon L\times L\to[0,\infty)$.
+	
+	\begin{defn}
+		Let $\omega\colon X\times X\to[0,\infty)$ and $\omega'\colon X'\times X'\to[0,\infty)$ be weighted networks and let $C\subseteq X\times X'$. We define the \textit{$p$-distortion of $C$} as 
+		$$
+		\dis^p(C) = \left(\sum_{\substack{(x,x'),(y,y')\in C}}\vert\omega(x,y)-\omega'(x',y')\vert^p\right)^{\frac{1}{p}}.
+		$$
+	\end{defn}
+	
+	\begin{defn}
+		Let $\mathcal{R}=\mathcal{R}(X,X')$ denote the set of all correspondences $C\subseteq X\times X'$ and let $\omega$ and $\omega'$ be weighted networks as in the above definition. Define the \textit{$p$-network distance} between $X$ and $X'$ as
+		$$
+		d_N^p(X,X')=\frac{1}{2}\inf_{C\in\mathcal{R}}\dis^p(C).
+		$$
+	\end{defn}
+	Note that if $(M,d_M)$ and $(N,d_N)$ are metric spaces, and $\omega(x,y)=d_M(x,y)$, $\omega'(x',y')=d_N(x',y')$, then the $p$-network distance agrees with the Gromov-Hausdorff distance when $p=\infty$.
+	
+	\begin{ex}[Duplicating points does not change the network distance]
+		Let $X=\{x_1,x_2,\ldots, x_n\}$ be finite point set in $\R^d$, and let $X'$ be $X$ with one of the points $x'=x_i$ duplicated. We consider the weighted networks with the weight function $\omega$ being the $L_2$ distance on $\R^d$. Let $C\subseteq X\times X'$ be the correspondence consisting of all pairs on the form $(x_j, x_j)$ for $1\leq j\leq n$, and the pair $(x_i, x')$. Then, clearly $\dis^p(C)=0$ and hence $d_N^p(X,X')=0$.
 	\end{ex}
 
 	\section{Comments}
