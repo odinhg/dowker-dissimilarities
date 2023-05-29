@@ -111,8 +111,6 @@
 			\includestandalone[width=.8\textwidth]{figs/duplicated_point_dowker_p_nerve}
 			\caption{Duplicating a point can lead to the birth of a new non-trivial cycle. In the $p=\infty$ case, the triangle would already be filled in at $t=b$.}
 		\end{figure}
-
-		
 	\end{ex}
 	
 	\section{Network distance}
@@ -136,6 +134,29 @@
 	\begin{ex}[Duplicating points does not change the network distance]
 		Let $X=\{x_1,x_2,\ldots, x_n\}$ be finite point set in $\R^d$, and let $X'$ be $X$ with one of the points $x'=x_i$ duplicated. We consider the weighted networks with the weight function $\omega$ being the $L_2$ distance on $\R^d$. Let $C\subseteq X\times X'$ be the correspondence consisting of all pairs on the form $(x_j, x_j)$ for $1\leq j\leq n$, and the pair $(x_i, x')$. Then, clearly $\dis^p(C)=0$ and hence $d_N^p(X,X')=0$.
 	\end{ex}
+	
+	\section{Computing witnesses}
+	In this section, suppose $L\subseteq W=\R^d$ and $\Lambda\colon L\times W\to [0,\infty]$ is given by $\Lambda(l,w)=\Vert l-w\Vert_q$ for some fixed $q$. Fix some $p$ and consider the $p$-nerve $D\Lambda=D^p\Lambda$ of $\Lambda$. Given a simplex $\sigma\in L$, we want to know at what time $t$ the simplex $\sigma$ appears in the $p$-nerve. In other words, we want to compute the infimum
+	$$
+	\inf_{w\in W}\left(\sum_{l\in\sigma}\Lambda(l,w)^p\right)^{\frac{1}{p}}.
+	$$
+	In this section, we give a description of $w^*\in W$ minimizing the above sum for different values of $p$ and $q$. Let $g_\sigma\colon W\to[0,\infty]$ be given by $g_\sigma(w)=\sum_{l\in\sigma}\Lambda(l,w)^p$. The partial derivatives of $g_\sigma$ are 
+	$$
+	\frac{\partial g_\sigma}{\partial w_i}(w)=p\sum_{l\in\sigma}\Vert l-w\Vert_q^{p-q}(w_i-l_i)|l_i-w_i|^{q-2}
+	$$
+	so any extremal point $w\in W$ must satisfy
+	$$
+	w_i = \frac{\sum_{l\in\sigma}l_i\Vert l-w\Vert_q^{p-q}|l_i-w_i|^{q-2}}{\sum_{l\in\sigma}\Vert l-w\Vert_q^{p-q}|l_i-w_i|^{q-2}}
+	$$
+	for all $i=1,2,\ldots, d$. For simplicity, we set $q=2$ to get rid of the factors $|l_i-w_i|^{q-2}$. In the case $p=2$, $w$ is the centroid of the points in $\sigma$. In the case $p=1$, $w$ is the geometric median of $\sigma$.\footnote{The geometric median has many names, including the Fermat-Weber point, $L_1$-median, spatial median, Euclidean minisum point and Torricelli point.} We are looking for roots of the functions $G_\sigma\colon W\to W$ defined by
+	$$
+	G_\sigma(w)=\frac{\boldsymbol{\sigma}D(w)}{\mathbf{1}^\top D(w)}-w.
+	$$
+	where $\boldsymbol{\sigma}$ is the $d\times(k+1)$ matrix with $\boldsymbol{\sigma}_{ij}=l^j_i$ representing the $k$-simplex $\sigma=\{l^0,\ldots,l^k\}$, and $D(w)$ is the column vector with $D(w)_i=\Vert l^i - w\Vert^{p-2}_2$.
+	
+	\todo[inline]{Show that the minimizer $w$ is global. We need to show that the Hessian of $g_\sigma$ is positive semi-definite. This is equivalent with convexity (as $g_\sigma$ is twice differentiable). Then, for a differentiable convex function $g$, $w^*$ is a global minimizer iff $\nabla f(w^*)=0$. Or maybe we can just show convexity directly from definition.}
+
+	
 
 	\section{Comments}
 	\begin{enumerate}

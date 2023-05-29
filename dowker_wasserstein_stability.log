@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  23 MAY 2023 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  29 MAY 2023 16:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1432,16 +1432,29 @@ Overfull \hbox (2.91579pt too wide) detected at line 99
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4] [5]
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 151.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 151.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 153.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 7.3pt on input line 153.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 5.5pt on input line 153.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 157.
+ [6]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 148.
+(Font)              scaled to size 10.0pt on input line 169.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-148.
+169.
  (/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 148.
- [6{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}]
+(Font)              scaled to size 10.0pt on input line 169.
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}]
 (./dowker_wasserstein_stability.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1449,34 +1462,34 @@ LaTeX Font Warning: Size substitutions with differences
 
 Package rerunfilecheck Info: File `dowker_wasserstein_stability.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: B4295B8627AF540A226501AC14468088;609.
+(rerunfilecheck)             Checksum: 3D71F54B996522B4C59D0E730B7AA2E1;750.
 Package logreq Info: Writing requests to 'dowker_wasserstein_stability.run.xml'
 .
 \openout1 = `dowker_wasserstein_stability.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38619 strings out of 476025
- 751625 string characters out of 5796532
+ 38707 strings out of 476025
+ 753095 string characters out of 5796532
  1875388 words of memory out of 5000000
- 58409 multiletter control sequences out of 15000+600000
- 601432 words of font info for 172 fonts, out of 8000000 for 9000
+ 58478 multiletter control sequences out of 15000+600000
+ 622913 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,11n,99p,1922b,1773s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texmf
--dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/newpx/npxsups-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/n
-ewpx/pxmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr
-/share/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf-dist/f
-onts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/txf
-onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></us
-r/share/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fon
-ts/type1/public/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/
-zplri.pfb>
-Output written on dowker_wasserstein_stability.pdf (6 pages, 178194 bytes).
+</usr/share/texmf-dist/fonts/type1/public/newpx/NewPXBMI_gnu.pfb></usr/share/
+texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/newpx/NewPXMI_gnu.pfb></usr/share/texmf-dist/fonts/type1/public/newp
+x/npxsups-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/pxmiaX.pf
+b></usr/share/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf-d
+ist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
+></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texmf-
+dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
+Output written on dowker_wasserstein_stability.pdf (7 pages, 186948 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
