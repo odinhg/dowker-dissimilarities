@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  29 MAY 2023 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.15)  30 MAY 2023 10:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1433,47 +1433,68 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4] [5]
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 151.
+(Font)              scaled to size 14.4pt on input line 138.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 151.
+(Font)              scaled to size 10.5pt on input line 138.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.9pt on input line 138.
+
+
+LaTeX Font Warning: Font shape `U/bbold/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 138.
+
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 152.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 152.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 153.
+(Font)              scaled to size 10.0pt on input line 154.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 7.3pt on input line 153.
+(Font)              scaled to size 7.3pt on input line 154.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 153.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 157.
- [6]
+(Font)              scaled to size 5.5pt on input line 154.
+[6]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 169.
+(Font)              scaled to size 10.0pt on input line 175.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-169.
+175.
  (/usr/share/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 169.
- [7{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}]
-(./dowker_wasserstein_stability.aux)
+(Font)              scaled to size 10.0pt on input line 175.
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] (./dowker_w
+asserstein_stability.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `dowker_wasserstein_stability.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 3D71F54B996522B4C59D0E730B7AA2E1;750.
+(rerunfilecheck)             Checksum: FB765AB88FCF476CBF7E4364679EACF2;786.
 Package logreq Info: Writing requests to 'dowker_wasserstein_stability.run.xml'
 .
 \openout1 = `dowker_wasserstein_stability.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38707 strings out of 476025
- 753095 string characters out of 5796532
+ 38729 strings out of 476025
+ 753219 string characters out of 5796532
  1875388 words of memory out of 5000000
- 58478 multiletter control sequences out of 15000+600000
- 622913 words of font info for 223 fonts, out of 8000000 for 9000
+ 58493 multiletter control sequences out of 15000+600000
+ 637545 words of font info for 261 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,11n,99p,1922b,1773s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/newpx/NewPXBMI_gnu.pfb></usr/share/
@@ -1486,10 +1507,10 @@ lic/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
 ></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texmf-
 dist/fonts/type1/public/newpx/zplb.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/newpx/zplr.pfb></usr/share/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on dowker_wasserstein_stability.pdf (7 pages, 186948 bytes).
+Output written on dowker_wasserstein_stability.pdf (7 pages, 186840 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
